@@ -1,0 +1,12 @@
+# config/passenger.conf
+server {
+  listen 80;
+  server_name yourdomain.com;
+  root /path/to/your/app/public;
+
+  passenger_enabled on;
+  passenger_app_env production;
+
+  # Optional: Set the maximum pool sbrew install nginx passengerize
+  passenger_max_pool_size 6;
+}
